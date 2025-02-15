@@ -3,8 +3,8 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Rejoice Engineering&Electromechanical",
-  description: "Rejoice Engineering and Electromechanical Work PLC",
+  title: "Rejoice Engineering | Electromechanical & Automation Experts",
+  description: "Rejoice Engineering provides precision electromechanical solutions, industrial automation, and sustainable energy systems. Your trusted engineering partner!",
 };
 
 export default function RootLayout({

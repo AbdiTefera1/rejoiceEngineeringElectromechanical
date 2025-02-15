@@ -63,7 +63,7 @@ const FooterCTA = () => {
         {/* Copyright */}
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 Rejoice Engineering Electromechanical Works | <Link href="https://www.linkedin.com/in/abditefera/">Designed by Abdi Tefera</Link>
+            © 2025 Rejoice Engineering Electromechanical Works | Designed by {<Link className='text-white' href="https://www.linkedin.com/in/abditefera/">Abdi Tefera</Link>}
           </p>
         </div>
       </div>

@@ -32,11 +32,11 @@ const Hero = () => {
       </div>
 
       {/* Animated Scrolling Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <div className="w-8 h-14 border-4 border-blue-400 rounded-full flex items-start justify-center">
           <div className="w-2 h-4 bg-blue-400 rounded-full mt-2"></div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -40,21 +40,21 @@ const ServicesSection = () => {
               icon: <FiHome className="text-4xl mb-4 text-blue-600" />,
               title: 'Residential Services',
               description: 'From routine maintenance and system upgrades to installing new electromechanical solutions.',
-              price: '299',
+              price: '2000',
               action: 'Book Consultation'
             },
             {
               icon: <FiBriefcase className="text-4xl mb-4 text-blue-600" />,
               title: 'Commercial Services',
               description: 'Ensure smooth operations for your business with our tailored industrial solutions.',
-              price: '516',
+              price: '6000',
               action: 'Get Quote'
             },
             {
               icon: <FiAlertCircle className="text-4xl mb-4 text-blue-600" />,
               title: 'Emergency Repairs',
               description: 'Technical emergencies can happen anytime - our team provides rapid support 24/7.',
-              price: '820',
+              price: '8000',
               action: 'Call Now'
             }
           ].map((service, index) => (
@@ -64,7 +64,7 @@ const ServicesSection = () => {
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
                 <div className="text-3xl font-bold text-blue-600 mb-6">
-                  ${service.price}
+                  ETB{service.price}
                 </div>
                 <button className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
                   {service.action}
