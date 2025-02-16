@@ -5,6 +5,33 @@ import Image from 'next/image';
 import logo from "@/public/rejoicelogo.svg"
 import logowbg from "@/public/rejoicelogowbg.svg"
 
+const navItems = [
+  {
+    name: "Home",
+    link: "/"
+  },
+  {
+    name: "About Us",
+    link: "/about"
+  },
+  // {
+  //   name: "Projects",
+  //   link: "/projects"
+  // },
+  {
+    name: "Services",
+    link: "/services"
+  },
+  // {
+  //   name: "Blog",
+  //   link: "/blog"
+  // },
+  {
+    name: "Contact",
+    link: "/contact"
+  }
+]
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,38 +46,38 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+    <header className={`fixed w-full z-40 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/90 backdrop-blur-md shadow-md'
-        : 'bg-transparent'
+        ? 'bg-white/90 backdrop-blur-md shadow-md top-0'
+        : 'bg-blue-700 top-8'
     }`}>
       <nav className="container mx-auto px-4 py-3 md:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
             <Link href="/" className={`font-bold text-2xl transition-all ${
-            isScrolled ? 'text-blue-600' : 'text-white'
+            isScrolled ? '' : 'text-white'
             }`}>
               {isScrolled ? <Image alt='Rejoice logo' src={logo}/> : <Image alt='Rejoice logo' src={logowbg}/>}
                 
                 {/* <span>
-                Rejoice Engineering 264660
+                Rejoice Engineering
                 </span> */}
             </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <div className="flex items-center space-x-6">
-              {['Home', 'About Us', 'Projects', 'Services', 'Blog', 'Contact'].map((item) => (
+              {navItems.map((item) => (
                 <Link
-                  key={item}
-                  href="#"
-                  className={`hover:text-blue-600 transition-colors ${
-                    isScrolled ? 'text-gray-700' : 'text-white'
+                  key={item.name}
+                  href={item.link}
+                  className={`hover:border-b-2 transition-colors ${
+                    isScrolled ? 'text-gray-700 border-gray-900' : 'text-white border-[#f2f2f2]'
                   } ${
-                    item === 'Blog' || item === 'Home' ? 'font-semibold' : ''
+                    item.name === 'Blog' || item.name === 'Home' ? 'font-semibold' : ''
                   }`}
                 >
-                  {item}
+                  {item.name}
                 </Link>
               ))}
             </div>
@@ -88,16 +115,16 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className={`md:hidden mt-4 pb-4 space-y-4 `}>
-            {['Home', 'About Us', 'Projects', 'Services', 'Blog', 'Contact'].map((item) => (
+            {navItems.map((item) => (
               <Link
-                key={item}
-                href="#"
+                key={item.name}
+                href={item.link}
                 className={`block text-gray-700 hover:text-blue-600 ${
                     isScrolled ? 'text-gray-700' : 'text-white'
                   }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                {item}
+                {item.name}
               </Link>
             ))}
             {/* <button className="w-full mt-4 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">

@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'engineering-pattern': "url('/public/images/electricalwork4.webp')",
+        'engineering-pattern': "url('/images/electricalwork.jpg')",
       },
       animation: {
         'bounce': 'bounce 2s infinite',
