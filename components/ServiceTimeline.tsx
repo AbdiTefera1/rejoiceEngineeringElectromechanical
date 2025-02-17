@@ -59,7 +59,7 @@ const ServiceTimeline = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-100 p-8">
+        <div className="min-h-screen bg-gray-100 p-2 md:p-8">
             
             <div className="max-w-6xl mb-44 mt-40 mx-auto relative">
                 {/* Title */}
