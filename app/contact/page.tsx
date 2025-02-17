@@ -8,7 +8,7 @@ const ContactPage = () => {
     <div>
         <TopBar/>
         <Header/>
-        <div className='h-screen'>
+        <div className='h-screen bg-white'>
             <h1>CONTACT PAGE</h1>
         </div>
         <FooterCTA/>
