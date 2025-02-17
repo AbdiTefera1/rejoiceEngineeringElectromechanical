@@ -125,7 +125,7 @@ const ServiceTimeline = () => {
                         {/* Content Container */}
                         <div className={`flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'} items-center`}>
                             <div className={`w-5/12 ${index % 2 === 1 && 'ml-auto'}`}>
-                                <div className={`${service.bgColor} p-6 rounded-lg shadow-lg transform 
+                                <div className={`${service.bgColor} p-3 md:p-6 rounded-lg shadow-lg transform 
                                     transition-all duration-300 hover:scale-105`}>
                                     <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                                         {service.icon}
