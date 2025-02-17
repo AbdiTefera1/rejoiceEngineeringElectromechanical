@@ -4,7 +4,7 @@ import Header from './Header';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-engineering-pattern bg-cover bg-center">
+    <section className="relative top-10 md:top-0 min-h-screen bg-engineering-pattern bg-cover bg-center">
       {/* Header <section className="relative min-h-screen bg-gradient-to-br from-gray-900 to-blue-900"> */}
       <Header />
       <div className='absolute inset-0 bg-gray-900/50 backdrop-blur-sm'>
