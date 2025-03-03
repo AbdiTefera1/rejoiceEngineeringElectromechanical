@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const FooterCTA = () => {
   return (
-    <footer className="bg-gray-900 text-white pt-20 pb-12">
+    <footer className="bg-gray-900 text-white pt-20 pb-12 relative z-50">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Main CTA Section */}
         <div className="text-center mb-16">

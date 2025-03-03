@@ -8,6 +8,7 @@ import {
     FaHandshake,
     FaMedal,
     FaCogs,
+    FaCheckCircle,
     // FaGlobeAfrica,
     // FaUsers
 } from 'react-icons/fa';
@@ -66,32 +67,67 @@ const MissionVisionValues = () => {
                             </span>
                         </h1>
                         
-                        <motion.p 
+                        <motion.div 
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.2 }}
-                            className="text-xl md:text-2xl text-gray-600 font-medium mt-4"
+                            className="text-gray-600 space-y-4"
                         >
-                            Pioneering Electromechanical Excellence Since 2010
-                        </motion.p>
+                            <p className="text-xl md:text-2xl font-medium leading-relaxed">
+                                Rejoice Engineering and Electromechanical Work PLC is a leading engineering solutions provider specializing in power systems, industrial electromechanical works, HVAC solutions, and telecom networking. Established with a vision to deliver high-quality engineering services, we bring innovation, efficiency, and reliability to every project we undertake.
+                            </p>
+                            
+                            <p className="text-xl md:text-2xl font-medium leading-relaxed">
+                                Our company is committed to providing cutting-edge electromechanical services to clients across various industries, including construction, manufacturing, and energy sectors. We adhere to international and local standards, ensuring our solutions meet the highest levels of quality, safety, and performance.
+                            </p>
+                        </motion.div>
                     </motion.div>
                     
                     <div className="mt-8 flex justify-center">
                         <div className="w-24 h-1 bg-blue-600 rounded-full"></div>
                     </div>
                 </div>
+
                 {/* Mission Section */}
                 <div className="bg-blue-500 rounded-lg p-6 mb-8 transform transition-all duration-300 hover:shadow-xl">
-                    <div className="flex items-center gap-6">
-                        <div className="bg-white p-4 rounded-full">
+                    <div className="flex items-start gap-6">
+                        <div className="bg-white p-4 rounded-full shrink-0">
                             <FaBusinessTime className="text-4xl text-blue-500" />
                         </div>
-                        <div>
-                            <h2 className="text-2xl font-bold text-white mb-2">Mission</h2>
-                            <p className="text-white text-lg">
-                            To deliver innovative engineering solutions that power progress while maintaining 
-                            the highest standards of safety, quality, and environmental responsibility.
-                            </p>
+                        <div className="space-y-4 flex-1">
+                            <h2 className="text-2xl font-bold text-white mb-3">Mission</h2>
+                            <ul className="space-y-4 text-white text-lg">
+                                <li className="flex items-start gap-3">
+                                    <FaCheckCircle className="text-2xl text-white shrink-0 mt-1" />
+                                    <p className="leading-relaxed">
+                                        To provide top-tier engineering solutions that meet and exceed industry standards.
+                                    </p>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <FaCheckCircle className="text-2xl text-white shrink-0 mt-1" />
+                                    <p className="leading-relaxed">
+                                        To prioritize customer satisfaction through professional, reliable, and efficient service delivery.
+                                    </p>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <FaCheckCircle className="text-2xl text-white shrink-0 mt-1" />
+                                    <p className="leading-relaxed">
+                                        To adopt the latest technological advancements in engineering and electromechanical fields.
+                                    </p>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <FaCheckCircle className="text-2xl text-white shrink-0 mt-1" />
+                                    <p className="leading-relaxed">
+                                        To maintain a strong commitment to quality, safety, and environmental sustainability.
+                                    </p>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <FaCheckCircle className="text-2xl text-white shrink-0 mt-1" />
+                                    <p className="leading-relaxed">
+                                        To foster long-term relationships with clients, partners, and stakeholders through trust and excellence.
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -105,7 +141,7 @@ const MissionVisionValues = () => {
                         <div>
                             <h2 className="text-2xl font-bold text-white mb-2">Vision</h2>
                             <p className="text-white text-lg">
-                            To be Africa&apos;s preferred partner in electromechanical engineering excellence
+                            To be the most trusted and preferred engineering and electromechanical solutions provider, delivering sustainable, cost-effective, and technologically advanced services in Ethiopia and beyond.
                             </p>
                         </div>
                     </div>

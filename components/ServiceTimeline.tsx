@@ -8,38 +8,50 @@ import {
     FaCogs,
     FaTools
 } from 'react-icons/fa';
+import { MdAutoMode, MdRouter } from "react-icons/md";
 import {motion} from 'framer-motion';
 
 const ServiceTimeline = () => {
     const servicesData = [
         {
-            title: "Power System",
+            title: "Power System Services",
             icon: <FaBolt />,
+            // items: [
+            //     "Diesel power plant erection, system installations and commissioning",
+            //     "Transmission line construction",
+            //     "Distribution network design and construction",
+            //     "Generator ATS Supply, installation, and maintenance"
+            // ],
             items: [
-                "Diesel power plant erection, system installations and commissioning",
+                "Diesel power plant erection, system installation, and commissioning",
                 "Transmission line construction",
                 "Distribution network design and construction",
-                "Generator ATS Supply, installation, and maintenance"
-            ],
+                "Generator ATS (Automatic Transfer Switch) supply, installation, and maintenance",
+                "Medium Voltage (MV) and Low Voltage (LV) power distribution system design",
+                "Overhead and underground power line installation",
+                "Transformers installation (pole-mounted, indoor net stations, compact transformers)",
+                "Power factor correction and energy auditing"
+              ],
             bgColor: "bg-yellow-500"
         },
         {
-            title: "Industrial System",
+            title: "Industrial Electromechanical Services",
             icon: <FaIndustry />,
             items: [
                 "Industrial design services",
-                "Electrical system design and installation",
+                "Electrical system design and installation for industries",
                 "Pipe layout designs for water, steam, and compressed air",
-                "Machinery selections, erection, system installation and commissioning",
-                "Custom engineering distribution board constructions",
-                "Power factor correction panel board constructions",
-                "Preventive and Breakdown maintenance",
-                "Energy auditing"
-            ],
+                "Machinery selection, erection, system installation, and commissioning",
+                "Custom engineering distribution board construction",
+                "Power factor correction panel board construction",
+                "Preventive and breakdown maintenance for industrial systems",
+                "Electrical installation for various industries (factories, hotels, hospitals, universities, mixed-use buildings, etc.)",
+                "Rural electrification and commissioning"
+              ],
             bgColor: "bg-blue-500"
         },
         {
-            title: "HVAC Systems",
+            title: "HVAC & Refrigeration Systems",
             icon: <FaSnowflake />,
             items: [
                 "Air conditioning system installations",
@@ -49,10 +61,38 @@ const ServiceTimeline = () => {
             bgColor: "bg-green-500"
         },
         {
+            title: "Electromechanical & Automation Services",
+            icon: <MdAutoMode />,
+            items: [
+                "Installation of ATS and interface boards",
+                "Generator installation, erection, and maintenance",
+                "Motor winding, erection, and maintenance",
+                "Public street light erection and installation",
+                "Building management system (BMS) installation",
+                "Factory automation, robotics, and SCADA-based control systems"
+            ],
+            bgColor: "bg-gray-500"
+        },
+        {
+            title: "Telecom, Networking & IT Services",
+            icon: <MdRouter />,
+            items: [
+                "Telecom equipment installation & configuration (BTS, antennas, power cabinets, etc.)",
+                "Networking design, installation, testing, and configuration",
+                "CCTV installation for security monitoring",
+                "Fiber optic cable installation and termination"
+            ],
+            bgColor: "bg-[#B22222]"
+        },
+        {
             title: "Consultancy Services",
             icon: <FaUserTie />,
             items: [
-                "A vast experience for international and local companies in private and governmental"
+                "Power system design and engineering consultancy",
+                "Industrial and electrical system optimization",
+                "Energy efficiency auditing and consulting",
+                "Project management for electromechanical projects",
+                "Advisory services for governmental and private organizations"
             ],
             bgColor: "bg-purple-500"
         }
